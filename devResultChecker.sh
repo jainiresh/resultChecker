@@ -15,7 +15,7 @@ EMAIL_TO="jainireshj@gmail.com"
 EMAIL_BODY="The count of titles is $title_count. Please check the results."
 
 # Check the count and respond accordingly
-if [ "$title_count" -ne 45 ]; then
+if [ "$title_count" -eq 45 ]; then
   echo "$EMAIL_BODY" | python3 - <<END
 import smtplib
 from email.mime.text import MIMEText
